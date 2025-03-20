@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Food Donate</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Food <b style="color: #06C167;">Donate</b></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.php">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            const navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <style>
+        .coverc {
+            width: 100%;
+            height: 400px;
+            background: url('img/about3.jpg') no-repeat;
+            background-size: cover;
+            display: grid;
+            place-items: center;
+            padding-top: 8rem;
+        }
+        .title {
+            font-size: 38px;
+            text-align: center;
+            align-items: center;
+        }
+        .para p {
+            font-size: 23px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        @media (max-width: 767px) {
+            .para p {
+                font-size: 16px;
+            }
+            #map {
+                height: 200px;
+                width: 300px;
+            }
+            .title {
+                font-size: 28px;
+                margin: 10px;
+                text-align: center;
+                align-items: center;
+            }
+        }
+    </style>
+    <br>
+    <br>
+    <p class="title">"Welcome to <u>Food Donate</u>"</p>
+    <br>
+    <br>
+    <br>
+    <p class="heading">About us</p>
+    <div class="para">
+        <p>We are a team of passionate individuals committed to addressing the issue of food waste in India. Our goal is to create a system that connects food donors with charities and NGOs, while also reducing the environmental impact of food waste.</p>
+    </div>
+    <br>
+    <div class="map" style="text-align: center; padding-bottom: 50px;">
+        <p style="font-size:30px;">Location</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.139267444249!2d78.35639807487072!3d17.54492778401012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb914f1b9e7b0b%3A0x8e3f8b4e7d5b0d8a!2sK%20L%20University%20Hyderabad%20Campus!5e0!3m2!1sen!2sin!4v1677633156837!5m2!1sen!2sin" width="777" height="473" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+    </div>
+</body>
+</html>
